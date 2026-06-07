@@ -23,5 +23,11 @@ public class UserProfile {
         return address;
     }
 
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
 
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }
