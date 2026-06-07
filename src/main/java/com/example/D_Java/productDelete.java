@@ -5,6 +5,9 @@ public class productDelete {
     private String productName;
     private double price;
 
-
-
+    public productDelete(int productId, String productName, double price) {
+        this.productId = productId;
+        this.productName = productName;
+        this.price = price;
+    }
 }
