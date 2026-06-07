@@ -6,6 +6,8 @@ public class StudentController {
         Student student = new Student(101, "Mawadda", "A");
 
         System.out.println("Student Id: " + student.getStudentId());
+        System.out.println("Student Name: " + student.getStudentName());
+        System.out.println("Student Grade: " + student.getGrade());
 
     }
 }
