@@ -2,7 +2,15 @@ package com.example.D_Java;
 
 import java.util.ArrayList;
 
+
 public class DeleteTaskDemo {
-    ArrayList<String> tasks = new ArrayList<>();
+    public static void main(String[] args){
+        ArrayList<String> tasks = new ArrayList<>();
+
+        tasks.add("Buy groceries");
+        tasks.add("Call doctor");
+        tasks.
+
+    }
 
 }
