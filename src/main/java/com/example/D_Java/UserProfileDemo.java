@@ -6,7 +6,7 @@ public class UserProfileDemo {
         UserProfile user = new UserProfile(1001, "92965487", "Muscat");
 
         System.out.println("User Id: " + user.getUserId());
-        System.out.println();
+        System.out.println("User phone Number: " + user.getPhoneNumber());
 
     }
 }
