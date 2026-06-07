@@ -25,6 +25,13 @@ public class Student {
     }
 
 
+    public void setStudentName(String studentName) {
+        StudentName = studentName;
+    }
+
+    public void setGrade(String grade) {
+        Grade = grade;
+    }
 }
 
 
