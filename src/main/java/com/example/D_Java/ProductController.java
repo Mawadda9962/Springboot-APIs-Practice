@@ -26,5 +26,14 @@ public class ProductController {
       Product product = productHashMap.get(id);
 
 
+      int previousStock = product.getStockQuantity();
+
+      product.setStockQuantity(Quantity);
+
+        return "Product Updated Successfully " +
+                "Product Name: " + product.getName() + " " +
+                "Previous Stock: " + previousStock + " " +
+                "Updated Stock: " + product.getStockQuantity();
+    }
 
 }
