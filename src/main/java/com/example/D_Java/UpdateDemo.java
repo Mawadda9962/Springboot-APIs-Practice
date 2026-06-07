@@ -17,6 +17,10 @@ public class UpdateDemo {
         if (!CurrentStudentName.equals(NewStudentName)){
             System.out.println("Names are Different");
 
+            CurrentStudentName=NewStudentName;
+            isUpdateSuccessful = true;
+
+
 
         }
     }
