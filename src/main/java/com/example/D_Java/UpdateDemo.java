@@ -2,7 +2,10 @@ package com.example.D_Java;
 
 public class UpdateDemo {
 
-    String CurrentStudentName;
-    String NewStudentName;
-    String Status;
+    String CurrentStudentName = "Mawadda";
+    String NewStudentName = "Jehad";
+    boolean isUpdateSuccessful = false;
+    String UpdateStateMassage = " ";
+
+
 }
