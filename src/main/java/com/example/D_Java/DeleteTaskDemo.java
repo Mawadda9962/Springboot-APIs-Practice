@@ -18,13 +18,19 @@ public class DeleteTaskDemo {
 
         String targetTask = "Call doctor";
 
+        boolean itemRemoved = false;
 
         for (int i = 0; i<tasks.size(); i++){
             if (tasks.get(i).equalsIgnoreCase(targetTask)){
                 tasks.remove(i);
                 System.out.println("Task " + targetTask + "Deleted Successfully");
+                itemRemoved =true;
                 break;
             }
+        }
+
+        if (!itemRemoved){
+            System.out.println("");
         }
 
 
