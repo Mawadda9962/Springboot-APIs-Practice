@@ -14,7 +14,9 @@ public class StudentController {
         student.setStudentName("Ahmed");
 
 
-        System.out.println("Student Id:" + student.getStudentId()) ;
+        System.out.println("Student Id:" + student.getStudentId());
+        System.out.println("Student Name: " + student.getStudentName());
+        System.out.println("Student Garde: " + student.getGrade());
 
     }
 }
