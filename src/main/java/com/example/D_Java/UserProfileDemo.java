@@ -9,5 +9,9 @@ public class UserProfileDemo {
         System.out.println("User phone Number: " + user.getPhoneNumber());
         System.out.println("User Address: " + user.getAddress());
 
+
+        user.setPhoneNumber("965577743");
+        user.setAddress("Sohar");
     }
 }
+
