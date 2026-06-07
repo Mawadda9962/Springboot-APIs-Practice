@@ -3,7 +3,7 @@ package com.example.D_Java;
 import java.util.ArrayList;
 
 
-public class DeleteTaskDemo {
+public class deleteTaskDemo {
     public static void main(String[] args){
         //Storing Data
         ArrayList<String> tasks = new ArrayList<>();

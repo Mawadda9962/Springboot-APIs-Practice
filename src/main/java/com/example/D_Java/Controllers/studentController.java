@@ -1,12 +1,12 @@
-package Controllers;
+package com.example.D_Java.Controllers;
 
-import Entities.Student;
+import com.example.D_Java.Entities.Student;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class StudentController {
+public class studentController {
     private Student existingStudent = new Student(101, "Mawadda", "A");
 
 

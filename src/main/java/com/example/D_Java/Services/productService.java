@@ -1,6 +1,6 @@
-package Services;
+package com.example.D_Java.Services;
 
-import Entities.Product;
+import com.example.D_Java.Entities.Product;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

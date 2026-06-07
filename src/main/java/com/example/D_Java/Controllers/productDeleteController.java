@@ -1,6 +1,6 @@
-package Controllers;
+package com.example.D_Java.Controllers;
 
-import Services.productService;
+import com.example.D_Java.Services.productService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;

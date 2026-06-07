@@ -1,11 +1,11 @@
-package Entities;
+package com.example.D_Java.Entities;
 
-public class LibraryMember {
+public class libraryMember {
     private Integer memberId;
     private String fullName;
     private String membershipType;
 
-    public LibraryMember(Integer memberId, String fullName, String membershipType) {
+    public libraryMember(Integer memberId, String fullName, String membershipType) {
         this.memberId = memberId;
         this.fullName = fullName;
         this.membershipType = membershipType;

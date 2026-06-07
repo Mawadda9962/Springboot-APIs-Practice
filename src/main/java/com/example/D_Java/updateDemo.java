@@ -1,8 +1,8 @@
 package com.example.D_Java;
 
-import Entities.Student;
+import com.example.D_Java.Entities.Student;
 
-public class UpdateDemo {
+public class updateDemo {
     public static void main(String[] args){
         String CurrentStudentName = "Mawadda";
         String NewStudentName = "Jehad";

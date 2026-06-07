@@ -1,4 +1,4 @@
-package Entities;
+package com.example.D_Java.Entities;
 
 public class productDelete {
     private int productId;
