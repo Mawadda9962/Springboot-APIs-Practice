@@ -9,7 +9,7 @@ public class StudentController {
     private Student existingStudent = new Student(101, "Mawadda", "A");
 
 
-    @PutMapping("//updateStudent")
+    @PutMapping("/updateStudent")
     public String updateStudentName(@RequestParam String name){
         String previousName = existingStudent.getStudentName();
         existingStudent.setStudentName(name);
