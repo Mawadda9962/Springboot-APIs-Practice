@@ -12,15 +12,18 @@ public class DeleteTaskDemo {
         tasks.add("Call doctor");
         tasks.add("Finish report");
 
+        //printing data
         for (String task: tasks){
             System.out.println(task);
         }
 
 
+        //Match
         String targetTask = "Call doctor";
 
         boolean itemRemoved = false;
 
+        //Delete
         for (int i = 0; i<tasks.size(); i++){
             if (tasks.get(i).equalsIgnoreCase(targetTask)){
                 tasks.remove(i);
