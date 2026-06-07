@@ -1,23 +1,23 @@
 package com.example.D_Java.Entities;
 
 public class Student {
-    private Integer StudentId;
-    private String StudentName;
+    private Integer studentId;
+    private String studentName;
     private String Grade;
 
 
     public Student(Integer studentId, String studentName, String grade) {
-        StudentId = studentId;
-        StudentName = studentName;
+        this.studentId = studentId;
+        this.studentName = studentName;
         Grade = grade;
     }
 
     public Integer getStudentId() {
-        return StudentId;
+        return studentId;
     }
 
     public String getStudentName() {
-        return StudentName;
+        return studentName;
     }
 
     public String getGrade() {
@@ -26,7 +26,7 @@ public class Student {
 
 
     public void setStudentName(String studentName) {
-        StudentName = studentName;
+        this.studentName = studentName;
     }
 
     public void setGrade(String grade) {
