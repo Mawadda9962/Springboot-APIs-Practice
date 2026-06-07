@@ -15,23 +15,11 @@ public class LibraryMember {
         return memberId;
     }
 
-    public void setMemberId(Integer memberId) {
-        this.memberId = memberId;
-    }
-
     public String getFullName() {
         return fullName;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
     public String getMembershipType() {
         return membershipType;
-    }
-
-    public void setMembershipType(String membershipType) {
-        this.membershipType = membershipType;
     }
 }
