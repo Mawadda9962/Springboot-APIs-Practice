@@ -6,6 +6,8 @@ public class UpdateDemo {
         String NewStudentName = "Jehad";
         boolean isUpdateSuccessful = false;
         String UpdateStateMassage = " ";
+
+        System.out.println("Current Student Name in Sys");
     }
 
 }
