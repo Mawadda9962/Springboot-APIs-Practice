@@ -1,4 +1,4 @@
-package com.example.D_Java;
+package Entities;
 
 public class LibraryMember {
     private Integer memberId;

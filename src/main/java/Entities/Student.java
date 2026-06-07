@@ -1,4 +1,4 @@
-package com.example.D_Java;
+package Entities;
 
 public class Student {
     private Integer StudentId;

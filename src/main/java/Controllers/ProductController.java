@@ -1,5 +1,6 @@
-package com.example.D_Java;
+package Controllers;
 
+import Entities.Product;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -10,7 +11,7 @@ import java.util.HashMap;
 @RestController
 public class ProductController {
 
-    HashMap<Integer,Product> productHashMap = new HashMap<>();
+    HashMap<Integer, Product> productHashMap = new HashMap<>();
 
     public ProductController(){
         productHashMap.put(1, new Product(1, "SmartWatch", 10));

@@ -1,5 +1,7 @@
 package com.example.D_Java;
 
+import Entities.Student;
+
 public class UpdateDemo {
     public static void main(String[] args){
         String CurrentStudentName = "Mawadda";

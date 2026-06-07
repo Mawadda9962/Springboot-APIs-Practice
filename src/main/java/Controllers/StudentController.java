@@ -1,5 +1,6 @@
-package com.example.D_Java;
+package Controllers;
 
+import Entities.Student;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;

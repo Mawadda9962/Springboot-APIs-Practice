@@ -1,17 +1,15 @@
-package com.example.D_Java;
+package Controllers;
 
+import Services.productService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class productDeleteController {
+
     private productService productService;
-
-
 
     @Autowired
     public productDeleteController(productService productService) {
@@ -19,16 +17,13 @@ public class productDeleteController {
     }
 
     @DeleteMapping("/products/{id}")
-    public ResponseEntity<String> deleteProduct(@PathVariable("id") Integer id) {
-        // This now works perfectly because deleteProductById returns a boolean!
+    public String deleteProduct(@PathVariable Integer id) {
         boolean isDeleted = productService.deleteProductById(id);
 
         if (isDeleted) {
-            return new ResponseEntity<>("Product with ID " + id + " was deleted successfully.", HttpStatus.OK);
+            return "Product with ID " + id + " was deleted successfully.";
         } else {
-            return new ResponseEntity<>("Product with ID " + id + " not found.", HttpStatus.NOT_FOUND);
+            return "Product with ID " + id + " not found.";
         }
-
     }
-
 }

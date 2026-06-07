@@ -1,5 +1,7 @@
 package com.example.D_Java;
 
+import Entities.UserProfile;
+
 public class UserProfileDemo {
     public static void main(String[] args){
 
