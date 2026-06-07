@@ -10,4 +10,18 @@ public class UserProfile {
         this.phoneNumber = phoneNumber;
         this.address = address;
     }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+
 }
