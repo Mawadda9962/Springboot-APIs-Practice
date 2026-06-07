@@ -25,8 +25,7 @@ public class UpdateDemo {
         }
 
         System.out.println("Final Student Name: " + CurrentStudentName);
-        System.out.println("The update status" + isUpdateSuccessful);
+        System.out.println("The update status: " + isUpdateSuccessful);
 
     }
-
 }
