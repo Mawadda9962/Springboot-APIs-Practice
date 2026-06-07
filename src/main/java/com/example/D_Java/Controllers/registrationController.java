@@ -7,25 +7,19 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+@RestController
 
 public class registrationController {
-    @RestController
-    public class RegistrationController {
 
-        private final RegistrationService registrationService;
+        private RegistrationService registrationService;
 
         @Autowired
-        public RegistrationController(RegistrationService registrationService) {
+        public registrationController(RegistrationService registrationService) {
             this.registrationService = registrationService;
         }
 
         @DeleteMapping("/registrations")
         public String bulkDeleteRegistrations(@RequestBody List<Integer> ids) {
-            if (ids == null || ids.isEmpty()) {
-                return "No registration IDs were provided in the request payload body.";
-            }
-
             return registrationService.deleteMultipleByIds(ids);
         }
     }
-}
