@@ -27,5 +27,21 @@ public class UpdateDemo {
         System.out.println("Final Student Name: " + CurrentStudentName);
         System.out.println("The update status: " + isUpdateSuccessful);
 
+
+        Student student = new Student(101, "Mawadda", "A");
+
+        System.out.println("*********Initial Student Details********");
+        System.out.println("Student Id: " + student.getStudentId());
+        System.out.println("Student Name: " + student.getStudentName());
+        System.out.println("Student Grade: " + student.getGrade());
+
+        student.setStudentName("Ahmed");
+
+        System.out.println("*********Updated Student Detail**********");
+        System.out.println("Student Id:" + student.getStudentId());
+        System.out.println("Student Name: " + student.getStudentName());
+        System.out.println("Student Garde: " + student.getGrade());
+
     }
+
 }
