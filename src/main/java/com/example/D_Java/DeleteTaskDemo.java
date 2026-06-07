@@ -30,10 +30,13 @@ public class DeleteTaskDemo {
         }
 
         if (!itemRemoved){
-            System.out.println("");
+            System.out.println("Task not found, no deletion performed");
         }
 
 
+        for (String task : tasks){
+            System.out.println(task);
+        }
 
     }
 
