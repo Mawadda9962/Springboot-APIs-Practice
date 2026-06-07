@@ -9,7 +9,7 @@ public class DeleteTaskDemo {
 
         tasks.add("Buy groceries");
         tasks.add("Call doctor");
-        tasks.
+        tasks.add("Finish report");
 
     }
 
