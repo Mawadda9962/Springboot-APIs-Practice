@@ -12,5 +12,19 @@ public class Student {
         Grade = grade;
     }
 
+    public Integer getStudentId() {
+        return StudentId;
+    }
+
+    public String getStudentName() {
+        return StudentName;
+    }
+
+    public String getGrade() {
+        return Grade;
+    }
+
 
 }
+
+
