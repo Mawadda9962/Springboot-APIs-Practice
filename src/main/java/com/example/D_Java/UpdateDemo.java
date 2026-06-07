@@ -24,6 +24,7 @@ public class UpdateDemo {
             System.out.println("The existing value already matches the new value");
         }
 
+        System.out.println("Final Student Name: " + CurrentStudentName);
 
     }
 
