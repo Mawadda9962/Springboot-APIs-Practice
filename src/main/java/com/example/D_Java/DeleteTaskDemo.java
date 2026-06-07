@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class DeleteTaskDemo {
     public static void main(String[] args){
+        //Storing Data
         ArrayList<String> tasks = new ArrayList<>();
 
         tasks.add("Buy groceries");
