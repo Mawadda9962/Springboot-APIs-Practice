@@ -7,7 +7,8 @@ public class UpdateDemo {
         boolean isUpdateSuccessful = false;
         String UpdateStateMassage = " ";
 
-        System.out.println("Current Student Name in Sys");
+        System.out.println("Current Student Name in System: " + CurrentStudentName);
+        System.out.println("New Student Name: " + NewStudentName);
     }
 
 }
