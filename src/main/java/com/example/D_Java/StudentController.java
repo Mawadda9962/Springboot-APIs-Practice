@@ -5,5 +5,7 @@ public class StudentController {
 
         Student student = new Student(101, "Mawadda", "A");
 
+        System.out.println("Student Id: " + student.getStudentId());
+
     }
 }
