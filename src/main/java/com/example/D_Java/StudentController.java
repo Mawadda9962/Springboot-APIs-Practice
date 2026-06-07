@@ -10,8 +10,11 @@ public class StudentController {
         System.out.println("Student Grade: " + student.getGrade());
 
 
+        student.setGrade("B");
         student.setStudentName("Ahmed");
 
+
+        System.out.println("Student Id:" + student.getStudentId()) ;
 
     }
 }
