@@ -1,11 +1,11 @@
 package com.example.D_Java.Entities;
 
-public class EventRegistration {
+public class eventRegistration {
 
     private int registrationId;
     private String attendeeName;
 
-    public EventRegistration(int registrationId, String attendeeName) {
+    public eventRegistration(int registrationId, String attendeeName) {
         this.registrationId = registrationId;
         this.attendeeName = attendeeName;
     }
