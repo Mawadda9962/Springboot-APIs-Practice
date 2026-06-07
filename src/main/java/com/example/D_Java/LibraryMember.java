@@ -5,4 +5,9 @@ public class LibraryMember {
     private String fullName;
     private String membershipType;
 
+    public LibraryMember(Integer memberId, String fullName, String membershipType) {
+        this.memberId = memberId;
+        this.fullName = fullName;
+        this.membershipType = membershipType;
+    }
 }
