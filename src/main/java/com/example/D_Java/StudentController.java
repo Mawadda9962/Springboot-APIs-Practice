@@ -1,21 +1,10 @@
 package com.example.D_Java;
 
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
 public class StudentController {
-    public static void main(String[] args){
 
-        Student student = new Student(101, "Mawadda", "A");
 
-        System.out.println("*********Initial Student Details********");
-        System.out.println("Student Id: " + student.getStudentId());
-        System.out.println("Student Name: " + student.getStudentName());
-        System.out.println("Student Grade: " + student.getGrade());
-
-        student.setStudentName("Ahmed");
-
-        System.out.println("*********Updated Student Detail**********");
-        System.out.println("Student Id:" + student.getStudentId());
-        System.out.println("Student Name: " + student.getStudentName());
-        System.out.println("Student Garde: " + student.getGrade());
-
-    }
 }
+
