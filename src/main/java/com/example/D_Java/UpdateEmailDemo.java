@@ -13,6 +13,18 @@ public class UpdateEmailDemo {
         System.out.println(CurrentEmailAddress.equalsIgnoreCase(NewEmailAddress));
 
 
+        if (!CurrentEmailAddress.equalsIgnoreCase(NewEmailAddress)){
+            CurrentEmailAddress = NewEmailAddress;
+            isUpdated = true;
+            System.out.println("The Email Address is Updated successfully");
+        }else {
+            isUpdated = false;
+            System.out.println("No Update is required");
+        }
+
+        System.out.println("Final System Email: " + CurrentEmailAddress);
+        so
+
 
     }
 
