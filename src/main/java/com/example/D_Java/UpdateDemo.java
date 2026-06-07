@@ -5,13 +5,11 @@ public class UpdateDemo {
         String CurrentStudentName = "Mawadda";
         String NewStudentName = "Jehad";
         boolean isUpdateSuccessful = false;
-        String UpdateStateMassage = " ";
 
-        //3
+
         System.out.println("Current Student Name in System: " + CurrentStudentName);
         System.out.println("New Student Name: " + NewStudentName);
 
-        //4
         System.out.println(CurrentStudentName.equals(NewStudentName));
 
         if (!CurrentStudentName.equals(NewStudentName)){
@@ -19,10 +17,14 @@ public class UpdateDemo {
 
             CurrentStudentName=NewStudentName;
             isUpdateSuccessful = true;
+            System.out.println("The Student Name has Successfully Updated");
 
-
-
+        }else {
+            isUpdateSuccessful =false;
+            System.out.println("The existing value already matches the new value");
         }
+
+
     }
 
 }
