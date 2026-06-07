@@ -14,8 +14,9 @@ public class StudentController {
         String previousName = existingStudent.getStudentName();
         existingStudent.setStudentName(name);
 
+        return "Student Name Updated Successfully" + "previous Name: " + previousName +
+                "New Name: " + existingStudent.getStudentName();
     }
-
 
 }
 
