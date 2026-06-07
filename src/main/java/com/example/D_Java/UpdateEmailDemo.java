@@ -10,6 +10,9 @@ public class UpdateEmailDemo {
         System.out.println("Original Email Address: " + CurrentEmailAddress);
         System.out.println("New Email Address: " + NewEmailAddress);
 
+        System.out.println(CurrentEmailAddress.equalsIgnoreCase(NewEmailAddress));
+
+
 
     }
 
