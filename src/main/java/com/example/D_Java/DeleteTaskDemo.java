@@ -11,6 +11,10 @@ public class DeleteTaskDemo {
         tasks.add("Call doctor");
         tasks.add("Finish report");
 
+        for (String task: tasks){
+            System.out.println(task);
+        }
+
     }
 
 }
