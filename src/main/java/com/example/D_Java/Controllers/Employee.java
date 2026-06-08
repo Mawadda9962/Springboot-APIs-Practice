@@ -23,5 +23,9 @@ public class Employee {
         return department;
     }
 
+    @Override
+    public String toString() {
+        return employeeId  + employeeName  + department;
+    }
 
 }
