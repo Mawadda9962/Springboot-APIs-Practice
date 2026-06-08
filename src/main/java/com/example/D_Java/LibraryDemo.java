@@ -1,11 +1,11 @@
 package com.example.D_Java;
 
-import com.example.D_Java.Services.libraryManager;
+import com.example.D_Java.Services.LibraryManager;
 
-public class libraryDemo {
+public class LibraryDemo {
     public static void main(String[] args){
 
-        libraryManager libraryManager = new libraryManager();
+        LibraryManager libraryManager = new LibraryManager();
 
         System.out.println("Before Deletion :");
         libraryManager.displayMembers();

@@ -6,10 +6,10 @@ import org.springframework.stereotype.Service;
 import java.util.HashMap;
 
 @Service
-public class productService {
+public class ProductService {
     private HashMap<Integer, Product> productMap = new HashMap<>();
 
-    public productService() {
+    public ProductService() {
         loadSampleProducts();
     }
 

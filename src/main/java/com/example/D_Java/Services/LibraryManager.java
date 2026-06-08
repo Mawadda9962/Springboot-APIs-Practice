@@ -1,25 +1,25 @@
 package com.example.D_Java.Services;
 
-import com.example.D_Java.Entities.libraryMember;
+import com.example.D_Java.Entities.LibraryMember;
 
 import java.util.ArrayList;
 
-public class libraryManager {
-    private ArrayList<libraryMember> members;
+public class LibraryManager {
+    private ArrayList<LibraryMember> members;
 
-    public libraryManager() {
+    public LibraryManager() {
         this.members = new ArrayList<>();
         initializeMembers();
     }
 
 
     public void initializeMembers() {
-        addMember(new libraryMember(101, "Ahmed", "Standard"));
-        addMember(new libraryMember(102, "Sara", "Premium"));
-        addMember(new libraryMember(103, "John", "Standard"));
+        addMember(new LibraryMember(101, "Ahmed", "Standard"));
+        addMember(new LibraryMember(102, "Sara", "Premium"));
+        addMember(new LibraryMember(103, "John", "Standard"));
     }
 
-    public void addMember(libraryMember member){
+    public void addMember(LibraryMember member){
         this.members.add(member);
     }
 
@@ -27,7 +27,7 @@ public class libraryManager {
         if (members.isEmpty()){
             System.out.println("There is no members");
         }else {
-            for (libraryMember member : members){
+            for (LibraryMember member : members){
                 System.out.println("ID: " + member.getMemberId() + "Name: "
                 + member.getFullName() + "Type: " + member.getMembershipType());
             }
@@ -36,7 +36,7 @@ public class libraryManager {
 
     public boolean deleteMemberById(Integer memberId) {
         for (int i = 0; i < members.size(); i++) {
-            libraryMember currentMember = members.get(i);
+            LibraryMember currentMember = members.get(i);
 
             if (currentMember.getMemberId().equals(memberId)) {
                 members.remove(i);

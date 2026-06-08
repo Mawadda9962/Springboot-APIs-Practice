@@ -1,18 +1,18 @@
 package com.example.D_Java.Controllers;
 
-import com.example.D_Java.Services.productService;
+import com.example.D_Java.Services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class productDeleteController {
+public class ProductDeleteController {
 
-    private productService productService;
+    private ProductService productService;
 
     @Autowired
-    public productDeleteController(productService productService) {
+    public ProductDeleteController(ProductService productService) {
         this.productService = productService;
     }
 

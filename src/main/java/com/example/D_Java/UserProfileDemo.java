@@ -1,11 +1,11 @@
 package com.example.D_Java;
 
-import com.example.D_Java.Entities.userProfile;
+import com.example.D_Java.Entities.UserProfile;
 
-public class userProfileDemo {
+public class UserProfileDemo {
     public static void main(String[] args){
 
-        userProfile user = new userProfile(1001, "92965487", "Muscat");
+        UserProfile user = new UserProfile(1001, "92965487", "Muscat");
 
         System.out.println("********** User Profile Information ***********");
         System.out.println("User Id: " + user.getUserId());

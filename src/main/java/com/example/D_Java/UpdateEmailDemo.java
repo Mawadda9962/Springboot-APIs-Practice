@@ -1,6 +1,6 @@
 package com.example.D_Java;
 
-public class updateEmailDemo {
+public class UpdateEmailDemo {
     public static void main(String[] args){
         String CurrentEmailAddress = "Mawadda@gmail.com";
         String NewEmailAddress = "Mawadda.alshukaili@gmail.com";

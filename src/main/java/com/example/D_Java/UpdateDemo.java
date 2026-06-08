@@ -2,7 +2,7 @@ package com.example.D_Java;
 
 import com.example.D_Java.Entities.Student;
 
-public class updateDemo {
+public class UpdateDemo {
     public static void main(String[] args){
         String CurrentStudentName = "Mawadda";
         String NewStudentName = "Jehad";

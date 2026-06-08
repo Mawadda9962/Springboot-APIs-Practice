@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 
 @RestController
-public class productController {
+public class ProductController {
 
     HashMap<Integer, Product> productHashMap = new HashMap<>();
 
-    public productController(){
+    public ProductController(){
         productHashMap.put(1, new Product(1, "SmartWatch", 10));
     }
 

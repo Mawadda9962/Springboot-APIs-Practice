@@ -1,11 +1,11 @@
 package com.example.D_Java.Entities;
 
-public class productDelete {
+public class ProductDelete {
     private int productId;
     private String productName;
     private double price;
 
-    public productDelete(int productId, String productName, double price) {
+    public ProductDelete(int productId, String productName, double price) {
         this.productId = productId;
         this.productName = productName;
         this.price = price;
