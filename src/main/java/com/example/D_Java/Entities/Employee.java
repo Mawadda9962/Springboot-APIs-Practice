@@ -1,4 +1,4 @@
-package com.example.D_Java.Controllers;
+package com.example.D_Java.Entities;
 
 public class Employee {
     private String employeeId;
