@@ -40,23 +40,21 @@ public class VehicleManager {
         }
     }
 
-    //7.	Add Display Method
+    //Add Display Method
     public static void main(String[] args) {
         VehicleManager manager = new VehicleManager();
 
-        System.out.println("=== Vehicle List ===");
+        System.out.println("Vehicle List");
         for (Vehicle v : manager.getAllVehicles()) {
-            System.out.println(v.getVehicleId() + " -> " + v.getVehicleModel() + " -> " + v.getRentalPricePerDay() + " OMR");
+            System.out.println(v.getVehicleId() + v.getVehicleModel() + v.getRentalPricePerDay());
         }
 
-        // Test the POST Operation
         Vehicle newCar = new Vehicle("V104", "Kia Sportage", 30);
-        System.out.println("\nPOST Request Simulation: Adding New Vehicle...");
         System.out.println(manager.addVehicle(newCar));
 
-        System.out.println("\nNew Vehicle List");
+        System.out.println("New Vehicle List");
         for (Vehicle v : manager.getAllVehicles()) {
-            System.out.println(v.getVehicleId() + " -> " + v.getVehicleModel() + " -> " + v.getRentalPricePerDay() + " OMR");
+            System.out.println(v.getVehicleId() + v.getVehicleModel() + v.getRentalPricePerDay());
         }
     }
 }
