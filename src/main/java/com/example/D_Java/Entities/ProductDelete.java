@@ -10,7 +10,7 @@ public class ProductDelete {
         this.productName = productName;
         this.price = price;
     }
-
+-
     public int getProductId() {
         return productId;
     }
