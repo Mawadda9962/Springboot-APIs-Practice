@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Company {
+public class Campaign {
         private String campaignId;
         private String campaignName;
         private String platform;
