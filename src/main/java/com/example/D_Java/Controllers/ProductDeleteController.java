@@ -18,12 +18,7 @@ public class ProductDeleteController {
 
     @DeleteMapping("/products/{id}")
     public String deleteProduct(@PathVariable Integer id) {
-        boolean isDeleted = productService.deleteProductById(id);
+        return productService.deleteProductById(id);
 
-        if (isDeleted) {
-            return "Product with ID " + id + " was deleted successfully.";
-        } else {
-            return "Product with ID " + id + " not found.";
-        }
     }
 }
