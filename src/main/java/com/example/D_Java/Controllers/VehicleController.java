@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping
+@RequestMapping("Vehicle")
 public class VehicleController {
     @Autowired
     VehicleManager vehicleManager;
@@ -22,7 +22,5 @@ public class VehicleController {
     public String addVehicle(@RequestBody Vehicle vehicle){
         return vehicleManager.addVehicle(vehicle);
     }
-
-
 
 }
