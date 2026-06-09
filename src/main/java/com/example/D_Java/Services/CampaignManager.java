@@ -20,17 +20,12 @@ public class CampaignManager {
     }
 
     public String addCampaign(Campaign campaign) {
-        boolean exists = false;
 
         for (Campaign c : campaignList) {
             if (c.getCampaignId().equalsIgnoreCase(campaign.getCampaignId())) {
-                exists = true;
-                break;
+                return "\"Campaign ID already exists";
             }
         }
-        if (exists) {
-            return "Campaign ID already exists";
-        } else {
             campaignList.add(campaign);
             return "Campaign Created Successfully" +
                     "Campaign ID: " + campaign.getCampaignId() +
@@ -40,4 +35,4 @@ public class CampaignManager {
                     "Status: Active";
         }
     }
-}
+
