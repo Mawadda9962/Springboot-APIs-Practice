@@ -12,19 +12,15 @@ public class EmployeeService {
     private List<Employee> employeeList = new ArrayList<>();
 
     public EmployeeService() {
-
-        List<Employee> employeeList = new ArrayList<>();
         employeeList.add(new Employee("E101", "Sara", "HR"));
         employeeList.add(new Employee("E102", "Ahmed", "Finance"));
         employeeList.add(new Employee("E103", "John", "Engineering"));
     }
 
-
         public List<Employee> getAllEmployee() {
             return employeeList;
 
         }
-
 
         public String addEmployee(Employee newEmployee){
 

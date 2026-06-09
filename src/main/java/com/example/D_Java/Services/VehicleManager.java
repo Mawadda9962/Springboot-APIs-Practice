@@ -20,12 +20,10 @@ public class VehicleManager {
     }
 
     public String addVehicle(Vehicle vehicle) {
-        boolean exists = false;
 
         for (Vehicle v : vehicleList) {
             if (v.getVehicleId().equalsIgnoreCase(vehicle.getVehicleId())) {
-                exists = true;
-                break;
+                return
             }
         }
 
