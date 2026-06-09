@@ -23,13 +23,9 @@ public class VehicleManager {
 
         for (Vehicle v : vehicleList) {
             if (v.getVehicleId().equalsIgnoreCase(vehicle.getVehicleId())) {
-                return
+                return "Vehicle ID already exists";
             }
         }
-
-        if (exists) {
-            return "Vehicle ID already exists";
-        } else {
             vehicleList.add(vehicle);
             return "Vehicle Added Successfully" +
                     "Vehicle ID: " + vehicle.getVehicleId() +
@@ -37,4 +33,3 @@ public class VehicleManager {
                     "Rental Price Per Day: " + vehicle.getRentalPricePerDay() ;
         }
     }
-}
