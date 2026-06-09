@@ -31,7 +31,8 @@ public class EmployeeService {
         }
         employeeList.add(newEmployee);
 
-        return "Employee Added Successfully" + "Employee ID: " + newEmployee.getEmployeeId() + "\n" + "Employee Name: " + newEmployee.getEmployeeName() + "\n" + "Department: " + newEmployee.getDepartment() + "\n" + "Status: Created";
+        return "Employee Added Successfully" + "Employee ID: " + newEmployee.getEmployeeId() + "\n" + "Employee Name: " + newEmployee.getEmployeeName() + "\n" + "Department: " +
+                newEmployee.getDepartment() + "\n" + "Status: Created";
     }
 
 
