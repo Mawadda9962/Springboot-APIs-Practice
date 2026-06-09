@@ -1,51 +1,41 @@
 package com.example.D_Java.Services;
 
 import com.example.D_Java.Entities.Employee;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class EmployeeService {
-    public static void main(String[] args) {
 
+    private List<Employee> employeeList = new ArrayList<>();
+
+    public EmployeeService() {
 
         List<Employee> employeeList = new ArrayList<>();
         employeeList.add(new Employee("E101", "Sara", "HR"));
         employeeList.add(new Employee("E102", "Ahmed", "Finance"));
         employeeList.add(new Employee("E103", "John", "Engineering"));
+    }
 
 
-        System.out.println(" Employee List ");
-        for (Employee emp : employeeList) {
-            System.out.println(emp);
+        public List<Employee> getAllEmployee() {
+            return employeeList;
+
         }
 
 
-        Employee newEmployee = new Employee("E104", "Ahmed Ali", "IT");
-
-        boolean exists = false;
+        public String addEmployee(Employee newEmployee){
 
         for (Employee emp : employeeList) {
             if (emp.getEmployeeId().equalsIgnoreCase(newEmployee.getEmployeeId())) {
-                exists = true;
-                break;
+                return "Employee ID already Exists";
             }
         }
-        if (exists) {
-            System.out.println("Employee ID already exists");
-        } else {
-            employeeList.add(newEmployee);
+        employeeList.add(newEmployee);
 
-            System.out.println("Employee Added Successfully");
-            System.out.println("Employee ID: " + newEmployee.getEmployeeId());
-            System.out.println("Employee Name: " + newEmployee.getEmployeeName());
-            System.out.println("Department: " + newEmployee.getDepartment());
-        }
-        System.out.println("New Employee List");
-        for (Employee emp : employeeList) {
-            System.out.println(emp);
-        }
-
+        return "Employee Added Successfully" + "Employee ID: " + newEmployee.getEmployeeId() + "\n" + "Employee Name: " + newEmployee.getEmployeeName() + "\n" + "Department: " + newEmployee.getDepartment() + "\n" + "Status: Created";
     }
 
 

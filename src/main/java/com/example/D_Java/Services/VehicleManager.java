@@ -39,22 +39,4 @@ public class VehicleManager {
                     "Rental Price Per Day: " + vehicle.getRentalPricePerDay() ;
         }
     }
-
-    //Add Display Method
-    public static void main(String[] args) {
-        VehicleManager manager = new VehicleManager();
-
-        System.out.println("Vehicle List");
-        for (Vehicle v : manager.getAllVehicles()) {
-            System.out.println(v.getVehicleId() + v.getVehicleModel() + v.getRentalPricePerDay());
-        }
-
-        Vehicle newCar = new Vehicle("V104", "Kia Sportage", 30);
-        System.out.println(manager.addVehicle(newCar));
-
-        System.out.println("New Vehicle List");
-        for (Vehicle v : manager.getAllVehicles()) {
-            System.out.println(v.getVehicleId() + v.getVehicleModel() + v.getRentalPricePerDay());
-        }
-    }
 }

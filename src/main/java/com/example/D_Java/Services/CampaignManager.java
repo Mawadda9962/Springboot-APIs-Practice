@@ -1,10 +1,11 @@
 package com.example.D_Java.Services;
 
 import com.example.D_Java.Entities.Campaign;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Service
 public class CampaignManager {
 
     private List<Campaign> campaignList = new ArrayList<>();
@@ -39,5 +40,4 @@ public class CampaignManager {
                     "Status: Active";
         }
     }
-
 }
