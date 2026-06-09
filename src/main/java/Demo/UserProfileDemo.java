@@ -1,4 +1,4 @@
-package com.example.D_Java;
+package Demo;
 
 import com.example.D_Java.Entities.UserProfile;
 
