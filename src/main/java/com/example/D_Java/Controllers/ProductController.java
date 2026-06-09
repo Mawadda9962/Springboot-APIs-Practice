@@ -26,7 +26,6 @@ public class ProductController {
 
       Product product = productHashMap.get(id);
 
-
       int previousStock = product.getStockQuantity();
 
       product.setStockQuantity(Quantity);
