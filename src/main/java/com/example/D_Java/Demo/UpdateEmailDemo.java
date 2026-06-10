@@ -1,4 +1,4 @@
-package Demo;
+package com.example.D_Java.Demo;
 
 public class UpdateEmailDemo {
     public static void main(String[] args){

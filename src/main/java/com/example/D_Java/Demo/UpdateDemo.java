@@ -1,4 +1,4 @@
-package Demo;
+package com.example.D_Java.Demo;
 
 import com.example.D_Java.Entities.Student;
 
