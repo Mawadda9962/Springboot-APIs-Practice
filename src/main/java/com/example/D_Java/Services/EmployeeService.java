@@ -11,12 +11,8 @@ import java.util.List;
 @Service
 public class EmployeeService {
 
-    @Autowired
-    EmployeeRepository employeeRepository;
 
-    public Employee getEmployeeById(Integer id)
-
-   /* private List<Employee> employeeList = new ArrayList<>();
+   private List<Employee> employeeList = new ArrayList<>();
 
     public EmployeeService() {
         employeeList.add(new Employee("E101", "Sara", "HR",new ArrayList<>(),new ArrayList<>()));
@@ -38,9 +34,9 @@ public class EmployeeService {
         }
         employeeList.add(newEmployee);
 
-        return "Employee Added Successfully" + "Employee ID: " + newEmployee.getEmployeeId() + "\n" + "Employee Name: " + newEmployee.getEmployeeName() + "\n" + "Department: " +
-                newEmployee.getDepartment() + "\n" + "Status: Created";
-    }*/
+        return "Employee Added Successfully" + "Employee ID: " + newEmployee.getEmployeeId() + " " + "Employee Name: " + newEmployee.getEmployeeName() + " " + "Department: " +
+                newEmployee.getDepartment() + " " + "Status: Created";
+    }
 
 
 }

@@ -23,8 +23,8 @@ public class ProductService {
         if (productMap.containsKey(productId)) {
             Product product = productMap.get(productId);
             productMap.remove(productId);
-            return "Product Deleted Successfully!\n" +
-                    "Product ID: " + product.getId() + "\n" +
+            return "Product Deleted Successfully!" +
+                    "Product ID: " + product.getId() + " " +
                     "Product Name: " + product.getName();
         }
         return "Product not found";
