@@ -15,9 +15,9 @@ public class EmployeeService {
    private List<Employee> employeeList = new ArrayList<>();
 
     public EmployeeService() {
-        employeeList.add(new Employee("E101", "Sara", "HR",new ArrayList<>(),new ArrayList<>()));
-        employeeList.add(new Employee("E102", "Ahmed", "Finance", new ArrayList<>(), new ArrayList<>()));
-        employeeList.add(new Employee("E103", "John", "Engineering",new ArrayList<>(),new ArrayList<>()));
+        employeeList.add(new Employee(101, "Sara", "HR",new ArrayList<>(),new ArrayList<>()));
+        employeeList.add(new Employee(102, "Ahmed", "Finance", new ArrayList<>(), new ArrayList<>()));
+        employeeList.add(new Employee(103, "John", "Engineering",new ArrayList<>(),new ArrayList<>()));
     }
 
         public List<Employee> getAllEmployee() {
@@ -28,7 +28,7 @@ public class EmployeeService {
         public String addEmployee(Employee newEmployee){
 
         for (Employee emp : employeeList) {
-            if (emp.getEmployeeId().equalsIgnoreCase(newEmployee.getEmployeeId())) {
+            if (emp.getEmployeeId().equals(newEmployee.getEmployeeId())) {
                 return "Employee ID already Exists";
             }
         }

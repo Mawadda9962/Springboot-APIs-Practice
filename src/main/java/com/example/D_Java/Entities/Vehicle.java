@@ -17,7 +17,7 @@ public class Vehicle {
      @Id
      @GeneratedValue(strategy = GenerationType.AUTO)
 
-     private String vehicleId;
+     private Integer vehicleId;
      private String vehicleModel;
      private Integer rentalPricePerDay;
 }

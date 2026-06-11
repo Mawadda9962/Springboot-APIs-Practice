@@ -10,9 +10,9 @@ public class VehicleManager {
     private List<Vehicle> vehicleList = new ArrayList<>();
 
     public VehicleManager() {
-        vehicleList.add(new Vehicle("V101", "Toyota Corolla", 20));
-        vehicleList.add(new Vehicle("V102", "Nissan Sunny", 18));
-        vehicleList.add(new Vehicle("V103", "Hyundai Elantra", 22));
+        vehicleList.add(new Vehicle(101, "Toyota Corolla", 20));
+        vehicleList.add(new Vehicle(102, "Nissan Sunny", 18));
+        vehicleList.add(new Vehicle(103, "Hyundai Elantra", 22));
     }
 
     public List<Vehicle> getAllVehicles() {
@@ -22,7 +22,7 @@ public class VehicleManager {
     public String addVehicle(Vehicle vehicle) {
 
         for (Vehicle v : vehicleList) {
-            if (v.getVehicleId().equalsIgnoreCase(vehicle.getVehicleId())) {
+            if (v.getVehicleId().equals(vehicle.getVehicleId())) {
                 return "Vehicle ID already exists";
             }
         }

@@ -11,9 +11,9 @@ public class CampaignManager {
     private List<Campaign> campaignList = new ArrayList<>();
 
     public CampaignManager() {
-        campaignList.add(new Campaign("C101", "Summer Sale", "Instagram", 500));
-        campaignList.add(new Campaign("C102", "Black Friday", "Google Ads", 1000));
-        campaignList.add(new Campaign("C103", "Email Promo", "Email", 300));
+        campaignList.add(new Campaign(101, "Summer Sale", "Instagram", 500));
+        campaignList.add(new Campaign(102, "Black Friday", "Google Ads", 1000));
+        campaignList.add(new Campaign(103, "Email Promo", "Email", 300));
     }
     public List<Campaign> getAllCampaigns() {
         return campaignList;
@@ -22,7 +22,7 @@ public class CampaignManager {
     public String addCampaign(Campaign campaign) {
 
         for (Campaign c : campaignList) {
-            if (c.getCampaignId().equalsIgnoreCase(campaign.getCampaignId())) {
+            if (c.getCampaignId().equals(campaign.getCampaignId())) {
                 return "\"Campaign ID already exists";
             }
         }
